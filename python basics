@@ -1,0 +1,14 @@
+# input from user
+var=input('given input is ')
+print(var)
+print('\n')
+
+# swapping without using variables
+var=10
+var1=20
+var3=var+var1
+var1=var3-var1
+var=var3-var1
+print("after swapping")
+print(var)
+print(var1)
