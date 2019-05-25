@@ -1,0 +1,24 @@
+#finding frequent word from a sentence or a trending word from comments. 
+
+p = 'I love India. India is largest democrate country. India is my country'
+list = p.split(' ')    
+unique = []
+freq = []
+for e in list :
+    if e not in unique :
+        unique.append(e)
+
+for e in unique :
+    freq.append(list.count(e))
+
+d = dict(zip(unique, freq))
+print(d)
+d = {}
+for word in list:
+    cleanWord = word.replace(',','').replace('.','').upper()
+    if cleanWord in d :
+        d[cleanWord] += 1
+    else :
+        d[cleanWord] = 1
+
+print(d)
