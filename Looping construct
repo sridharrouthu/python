@@ -1,0 +1,109 @@
+#checking the number is even or odd
+var=input("enter the number is  ")
+if int(var)%2==0:
+  print("number is even")
+else:
+  print("number is odd")
+print('\n')
+
+#checking the number is prime or not
+var=input("enter the number   ")
+if int(var)==2:
+  print("it is prime number")
+if int(var)==1:
+  print("it is neither prime nor composite number")
+if int(var)%int(var)==0 and int(var)%1==0  and int(var)%2!=0:
+  print("it is prime number")
+else:
+  print("it is not prime number")
+print('\n')
+
+for Number in range (1, 101):
+    count = 0
+    for i in range(2, (Number//2 + 1)):
+        if(Number % i == 0):
+            count = count + 1
+            break
+    if (count == 0 and Number != 1):
+        print(" %d" %Number)
+          
+print('\n')
+
+var=0
+var1=1
+print(var)
+print(var1)
+for num in range(1,6):
+  f=var1+var
+  print(f)
+  var=var1
+  var1=f
+print('\n')
+  
+  
+a=[[1,2,3],[4,5,6],[7,8,9]]
+res=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(3):
+  for j in range(3):
+      res[i][j] = a[j][i]
+    
+for i in range(3):
+  for j in range(3):
+    print(res[i][j]," ",end=' ')
+  print(' ')      
+print('\n')
+
+
+# Write a python Program to Find the Sum of the Series: 1 + 1/2 + 1/3 + ….. + 1/N 
+var1=1
+f=0
+for num in range(1,4):
+    f+=(var1/num)
+print(f)
+print('\n')
+
+x = [1,2,3,4]
+y=[9,8,7,6,5]
+z=x+y
+print(z)
+z.sort()
+print(z)
+print('\n')
+
+x=[]
+num=int(input("enter the no of elements \n"))
+for i in range(1,num+1):
+  b=input("enter the number \n")
+  x.append(b)
+for i in range(0,len(x)):
+  for j in range(0,len(x)-i-1):
+    if x[j]>x[j+1]:
+      temp=x[j]
+      x[j]=x[j+1]
+      x[j+1]=temp
+print('the second largest number is ',x[num-2])   
+print('\n')
+
+l = ['a', 'abc', 'xyz', 'b', 'ab']
+l=sorted(l,key=len)
+print(l)
+print('\n')
+
+x=list(range(1,11))
+y=[]
+z=[]
+for num in x:
+  y=[num,(num*num)]
+  print(y)
+print('\n')
+
+x=[]
+num=int(input("enter the no of elements \n"))
+for i in range(0,num):
+  b=int(input("enter the number \n"))
+  x.append(b)
+b=[sum(x[0:i+1]) for i in range(0,len(x))]
+print(x)
+print(b)
+print('\n')
+
