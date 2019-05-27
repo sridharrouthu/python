@@ -1,0 +1,24 @@
+d1 = {1:"one", 2:"two"}
+d2 = {2:"two", 3:"three", 4:"four"}
+
+#Identify keys that are only in d1, d2
+s1=set(d1.keys())
+s2=set(d2.keys())
+
+s=s1.union(s2)-s1.intersection(s2)
+print(s)
+
+#Identify keys that are common between d1 and d2.
+for key in d1:
+  for key1 in d2:
+    if key==key1:
+       print(key)
+print('\n')
+
+d1 = {"name":"John", "city":"Mumbai", "Profession":"IT"}
+
+d2 = {"name":"John", "city":"Delhi", "Age":30}
+
+#Update d1 with values from d2.
+d1.update(d2) 
+print(d1)
