@@ -1,0 +1,26 @@
+import calc
+print('add',calc.add(1,2))
+print('mul',calc.mul(1,2))
+print('\n')
+
+#calc.py
+def add(i1=10,i2=20):
+  r = 0
+  if type(i1).__name__ in ('int', 'float') and type(i2).__name__ in ('int', 'float') :
+		 r = i1 + i2
+  return(r)
+def mul(i1=10,i2=20):
+  r = 0
+  if type(i1).__name__ in ('int', 'float') and type(i2).__name__ in ('int', 'float') :
+		 r = i1 * i2
+  return(r)
+  
+ import calc
+print('add',calc.add())
+print('mul',calc.mul())
+print('\n')
+
+import sys
+sys.path.append('c:\temp')
+set pythonpath = %pythonpath%;C:\Users\lenovo520\Downloads 
+print(calc.add(1,2))
