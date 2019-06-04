@@ -1,0 +1,49 @@
+#python function that uses default values for arguments.
+def add(n1=0,n2=1):
+  return(n1+n2)
+print(add())
+print('\n')
+
+#python code snippet to demonstrate calling function from Q1 using values from list as arguments for function arguments.
+def add(n1, n2, n3) :
+    return(n1 + n2 + n3)
+l=[1,2,3]
+print(add(*l))
+print('\n')
+
+# python code snippet to demonstrate calling function from Q1 using key:value combinations from dictionary as arguments for function arguments.
+def add(n1, n2, n3) :
+    return(n1 + n2 + n3)
+d={'n1':7,'n2':8,'n3':9}
+print(add(**d))
+print('\n')
+
+# python function that takes variable number of positional arguments. Add all parameter values and return the sum
+def add(*kargs):
+  sum=0
+  for i in kargs:
+    sum+=i
+  return(sum)
+print(add(1,2,3,4,5,6))
+print('\n')
+
+#python function that takes variable number of key value pair arguments. Add all parameter values and return the sum.
+def add(**kwargs):
+  sum=0
+  for i in kwargs:
+    sum+=kwargs[i]
+  return(sum)
+print(add(n4=5,n2=10))
+print('\n')
+
+#Write a python function that takes variable number of Positional and variable number of key value pair arguments. Add all parameter values and return the sum.
+def add(*kargs,**kwargs):
+  sum=0
+  for i in kargs:
+    sum+=i
+  for i in kwargs:
+    sum+=kwargs[i]
+  return(sum)
+print(add(1,10,n4=9,n3=10))
+print('\n')
+
