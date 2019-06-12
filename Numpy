@@ -1,0 +1,27 @@
+#Create a 3x3 Numpy Array for below data with int32 as data type.
+import numpy as np
+nl=np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(nl)
+print('\n')
+
+#Write a expression using slicing to get below.
+[[1,2],[4,5]]
+import numpy as np
+nl=np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(nl[:2,:2])
+print('\n')
+
+#Write a expression to add a new row to nl
+import numpy as np
+nl=np.array([[1,2,3],[4,5,6],[7,8,9]])
+nl=np.append(nl,[[10,11,12]],axis=0)
+print(nl)
+print('\n')
+
+#Write a expression to add a new column to nl
+import numpy as np
+nl=np.array([[1,2,3],[4,5,6],[7,8,9]])
+nl=np.append(nl,[[10,11,12]],axis=0)
+nl=np.append(nl,[[101],[201],[301],[401]],axis=1)
+print(nl)
+print('\n')
